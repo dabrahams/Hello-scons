@@ -1,0 +1,6 @@
+import os
+
+dist_dir = os.environ['DISTDIR']
+
+Import('env')
+env.Program(target = os.path.join(dist_dir, 'hello'), source = ['hello.c'])
