@@ -12,7 +12,7 @@ fetch the source and the build system (scons).
 
   <feed-for interface="http://0install.net/tests/Hello-scons.xml"/>
 
-  <group arch="*-src" compile:binary-main="hello" local-path=".">
+  <group arch="*-src" compile:binary-main="hello">
     <command name="compile" path="${DISTDIR}">
     <runner interface="http://0install.net/2006/3rd-party/SCons.xml">
       <version not-before="2"/>
