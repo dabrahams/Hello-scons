@@ -13,12 +13,13 @@ fetch the source and the build system (scons).
   <feed-for interface="http://0install.net/tests/Hello-scons.xml"/>
 
   <group arch="*-src" compile:binary-main="hello">
-    <command name="compile" path="${DISTDIR}">
+    <command name="compile">
     <runner interface="http://0install.net/2006/3rd-party/SCons.xml">
       <version not-before="2"/>
       <arg>-f</arg>
       <arg>${SRCDIR}/SConstruct</arg>
       <arg>--srcdir=${SRCDIR}</arg>
+      <arg>${DISTDIR}</arg>
     </runner>
     </command>
     <implementation id="." version="1.1-post"/>
