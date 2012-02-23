@@ -14,7 +14,7 @@ fetch the source and the build system (scons).
 
   <group arch="*-src" compile:binary-main="hello">
     <command name="compile">
-    <runner interface="http://0install.net/2006/3rd-party/SCons.xml">
+    <runner interface="http://dabrahams.github.com/0install-feeds/SCons.xml">
       <version not-before="2"/>
       <arg>-f</arg>
       <arg>${SRCDIR}/SConstruct</arg>
